@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebPage Summarizer</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    #summary {
+      margin-top: 10px;
+      white-space: pre-wrap;
+    }
+    .loading {
+      display: none;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h2>WebPage Summarizer</h2>
+  
+  <button id="summarize-btn">Summarize Page</button>
+  <button id="speech-btn">Text-to-speech</button>
+  
+  <div class="loading" id="loading-summary">Generating summary...</div>
+  <div class="loading" id="loading-speech">Generating speech...</div>
+  
+
+  <div id="summary"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
